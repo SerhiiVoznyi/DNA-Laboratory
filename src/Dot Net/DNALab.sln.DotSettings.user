@@ -1,4 +1,9 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0007c748_002Dedc6_002D48ac_002Dbb35_002D3f41c41ff2cb/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Text_ShouldBeNull" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::20D66E6E-DD88-4625-ADDD-15CCDC8DD74B::.NETCoreApp,Version=v3.1::DNALab.Tests.DNALabTests.Text_ShouldBeNull&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=1ddfafc5_002D6c32_002D4e5d_002D93e1_002D5119c68b694d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ByteToDna_Should_Map_AllBytes" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::20D66E6E-DD88-4625-ADDD-15CCDC8DD74B::.NETCoreApp,Version=v3.1::DNALab.Tests.ByteMapTests.ByteToDna_Should_Map_AllBytes&lt;/TestId&gt;&#xD;

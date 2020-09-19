@@ -9,13 +9,13 @@ The .NET Standard Library for encoding/decoding data into DNA sequence.
 This projects contains implementation of DNA encoding and decoding algorithms which will help you to encode binary data into DNA sequence.
 
 ## Installetion
-[![NuGet](https://img.shields.io/badge/NuGet-0.0.1.alfa-blue.svg)](...)
+[![NuGet](https://img.shields.io/badge/NuGet-0.0.1-blue.svg)](https://www.nuget.org/packages/DNALab)
 
 You can install the last stable version of **DNK Laboratory** using nuget.
 ```
-PM> ...
+PM> Install-Package DNALab -Version 0.0.1-alpha
 ```
-For more details about package please visit [this](...).
+For more details about package please visit [this](https://www.nuget.org/packages/DNALab).
 
 ## Encode binary data into DNA sequence
 Any digital data can be represented as array of bytes.

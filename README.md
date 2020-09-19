@@ -1,4 +1,4 @@
-![](https://github.com/SerhiiVoznyi/DNA-Laboratory/blob/master/assets/Logo.jpg)
+![](./assets/Logo.jpg)
 
 # DNK Laboratory
 
@@ -27,11 +27,11 @@ Lets split array by '**bit pairs**' from left to right, this how we get 4 pairs 
 Each of this state can be represented as **DNA nucleotide**.
 A Nucleotide in DNA consists of a sugar (deoxyribose), one of four bases (cytosine (C), thymine (T), adenine (A), guanine (G)), and a phosphate [4].
 
-![](https://github.com/SerhiiVoznyi/DNA-Laboratory/blob/master/assets/dna.JPG)
+![](./assets/dna.JPG)
 
 This means that any information streamed as an array of bytes, where each byte (eight-bit array), can be represented as a sequence of two base pairs of nucleotides.
 
-![](https://github.com/SerhiiVoznyi/DNA-Laboratory/blob/master/assets/Byte-To-DNA.JPG)
+![](./assets/Byte-To-DNA.JPG)
 
 ## References
 * [1] - [Byte](https://en.wikipedia.org/wiki/Byte)

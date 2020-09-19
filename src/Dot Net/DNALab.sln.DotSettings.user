@@ -1,0 +1,24 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=1ddfafc5_002D6c32_002D4e5d_002D93e1_002D5119c68b694d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ByteToDna_Should_Map_AllBytes" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::20D66E6E-DD88-4625-ADDD-15CCDC8DD74B::.NETCoreApp,Version=v3.1::DNALab.Tests.ByteMapTests.ByteToDna_Should_Map_AllBytes&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::20D66E6E-DD88-4625-ADDD-15CCDC8DD74B::.NETCoreApp,Version=v3.1::DNALab.Tests.Helpers.StringHelper_Should&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::20D66E6E-DD88-4625-ADDD-15CCDC8DD74B::.NETCoreApp,Version=v3.1::DNALab.Tests.Text.TextEncoderDecoderTests+Decoder_Should.Convert_Text_To_DNASequence&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::20D66E6E-DD88-4625-ADDD-15CCDC8DD74B::.NETCoreApp,Version=v3.1::DNALab.Tests.Text.TextEncoderDecoderTests+Encoder_Should.Convert_Text_To_DNASequence&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::20D66E6E-DD88-4625-ADDD-15CCDC8DD74B::.NETCoreApp,Version=v3.1::DNALab.Tests.Text.TextEncoderDecoderTests+Decoder_Should&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::20D66E6E-DD88-4625-ADDD-15CCDC8DD74B::.NETCoreApp,Version=v3.1::DNALab.Tests.Text.Text+Decoder_Should&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=bd9ca022_002Dc475_002D46fe_002D928a_002Dc8f28c976754/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Convert_Text_To_DNASequence" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::20D66E6E-DD88-4625-ADDD-15CCDC8DD74B::.NETCoreApp,Version=v3.1::DNALab.Tests.Text.Encoder_Should.Convert_Text_To_DNASequence&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::20D66E6E-DD88-4625-ADDD-15CCDC8DD74B::.NETCoreApp,Version=v3.1::DNALab.Tests.Text.Decoder_Should.Convert_DNASequence_To_Text&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::20D66E6E-DD88-4625-ADDD-15CCDC8DD74B::.NETCoreApp,Version=v3.1::DNALab.Tests.Text.Decoder_Should&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d589ea5c_002D8432_002D43d2_002Da047_002Df0a545c3ecfd/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Encoder_Should" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::20D66E6E-DD88-4625-ADDD-15CCDC8DD74B::.NETCoreApp,Version=v3.1::DNALab.Tests.Text.Encoder_Should&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=AGCT/@EntryIndexedValue">True</s:Boolean></wpf:ResourceDictionary>

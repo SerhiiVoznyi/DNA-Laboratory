@@ -1,0 +1,4 @@
+src/Dot Net/DNALab.Tests/bin/Debug/netcoreapp3.1/ko/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+**/bin/*
+**/obj/*
+**/.vs/*

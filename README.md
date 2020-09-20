@@ -1,6 +1,6 @@
 ![](./assets/Logo.jpg)
 
-# DNK Laboratory
+# DNA Laboratory
 
 The .NET Standard Library for encoding/decoding data into DNA sequence.
 
@@ -11,7 +11,7 @@ This projects contains implementation of DNA encoding and decoding algorithms wh
 ## Installetion
 [![NuGet](https://img.shields.io/badge/NuGet-0.0.1-blue.svg)](https://www.nuget.org/packages/DNALab)
 
-You can install the last stable version of **DNK Laboratory** using nuget.
+You can install the last stable version of **DNA Laboratory** using nuget.
 ```
 PM> Install-Package DNALab -Version 0.0.1-alpha
 ```

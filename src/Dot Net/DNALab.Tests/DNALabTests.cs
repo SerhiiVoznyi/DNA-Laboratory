@@ -15,7 +15,7 @@
         [Fact]
         public void Text_ShouldBeNull()
         {
-            _sut.Text.ShouldBeNull();
+            _sut.Text.ShouldNotBeNull();
         }
     }
 }

@@ -17,6 +17,6 @@
             _text = new Lazy<ITextEncoderDecoder>(() => text);
         }
 
-        public ITextEncoderDecoder Text { get; protected set; }
+        public ITextEncoderDecoder Text => _text.Value;
     }
 }

@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>0.0.1-alpha</Version>
+    <Version>0.0.2-alpha</Version>
     <Authors>Serhii Voznyi</Authors>
     <Company>Individual contributor</Company>
     <Description>A library that contains data encoding/decoding functionality that converts data types to a DNA sequence.</Description>

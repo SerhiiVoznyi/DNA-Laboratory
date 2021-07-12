@@ -4,6 +4,9 @@
 
 The .NET Standard Library for encoding/decoding data into DNA sequence.
 
+## Legal notice
+Code & Opinions expressed in this repository are solely my own and do not express the views or opinions of my employer. This code is not supported by any employer as well as not profitable and do not bring any financial benefits. All work that was done during its creation was conducted in my spare/personal time and based only on my willingness to help the open-source community.
+
 ## Overview
 
 This projects contains implementation of DNA encoding and decoding algorithms which will help you to encode binary data into DNA sequence.

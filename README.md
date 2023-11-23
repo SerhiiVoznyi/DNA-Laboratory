@@ -16,7 +16,7 @@ This projects contains implementation of DNA encoding and decoding algorithms wh
 
 You can install the last stable version of **DNA Laboratory** using nuget.
 ```
-PM> Install-Package DNALab -Version 0.0.2-alpha
+PM> Install-Package DNALab -Version 0.0.3-alpha
 ```
 For more details about package please visit [this](https://www.nuget.org/packages/DNALab).
 

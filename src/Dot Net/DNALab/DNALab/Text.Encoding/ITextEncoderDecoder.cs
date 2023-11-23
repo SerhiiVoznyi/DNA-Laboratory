@@ -1,13 +1,14 @@
 ﻿namespace DNALab.Text.Encoding
 {
+    using Concurrent;
     using System.Text;
     using System.Threading.Tasks;
-    using Concurrent;
 
     /// <summary>
     ///     The ITextEncoderDecoder interface.
     /// </summary>
-    public interface ITextEncoderDecoder : global::DNALab.IDecoder<string, string>,
+    public interface ITextEncoderDecoder :
+        global::DNALab.IDecoder<string, string>,
         global::DNALab.IEncoder<string, string>,
         IDecoder<string, string>,
         IEncoder<string, string>

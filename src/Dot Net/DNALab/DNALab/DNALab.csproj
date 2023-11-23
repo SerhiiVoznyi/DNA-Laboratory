@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<TargetFramework>net6.0</TargetFramework>
+	<ImplicitUsings>enable</ImplicitUsings>
+	<Nullable>enable</Nullable>
+	<Version>0.0.3-alpha</Version>
+	<Authors>Serhii Voznyi</Authors>
+	<Company>Individual contributor</Company>
+	<Description>A library that contains data encoding/decoding functionality that converts data types to a DNA sequence.</Description>
+	<PackageTags>DNA, encoding, decoding, text</PackageTags>
+	<PackageProjectUrl>https://github.com/SerhiiVoznyi/DNA-Laboratory</PackageProjectUrl>
+	<Copyright>Copyright 2023 Serhii Voznyi</Copyright>
+	<PackageIcon>Logo.jpg</PackageIcon>
+	<RepositoryType>Git</RepositoryType>
+	<RepositoryUrl>https://github.com/SerhiiVoznyi/DNA-Laboratory</RepositoryUrl>
+	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<None Include="Logo.jpg">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+	</ItemGroup>
+
+</Project>

@@ -1,10 +1,10 @@
-﻿namespace DNALab.Tests.Helpers
+﻿using DNALab.Core;
+
+namespace DNALab.Tests.Helpers
 {
+    using Shouldly;
     using System.Collections.Generic;
     using System.Linq;
-    using global::DNALab.Core;
-    using global::DNALab.Helpers;
-    using Shouldly;
     using Xunit;
 
     public class StringHelper_Should
@@ -21,29 +21,29 @@
         public void Split_ByChunks(int stringLength, int chunkSize, int expectedSize)
         {
             var value = new string('A', stringLength);
-            StringHelper.Split(value, chunkSize).ToList().Count.ShouldBe(expectedSize);
+            value.SplitToChunks(chunkSize).ToList().Count.ShouldBe(expectedSize);
         }
 
         [Theory]
         [MemberData(nameof(DNAMapSequences))]
         public void IsDNASequence_Return_True_For_DNAMapSequences_Keys(string value)
         {
-            StringHelper.IsDNASequence(value).ShouldBeTrue();
+            value.IsDNASequence().ShouldBeTrue();
         }
 
         public static IEnumerable<object[]> DNAMapSequences =>
-            Constants.DnaCodeToByteMap.Select(s => new object[] {s.Key});
+            Constants.DnaCodeToByteMap.Select(s => new object[] { s.Key });
 
 
         [Theory]
         [MemberData(nameof(DNAMapSequences))]
         public void IsDNASequence_Return_True_For_ByteMapSequences_Value(string value)
         {
-            StringHelper.IsDNASequence(value).ShouldBeTrue();
+            value.IsDNASequence().ShouldBeTrue();
         }
 
         public static IEnumerable<object[]> ByteMapSequences =>
-            Constants.ByteToDnaCodeMap.Select(s => new object[] {s.Value});
+            Constants.ByteToDnaCodeMap.Select(s => new object[] { s.Value });
 
         [Theory]
         [InlineData("")]
@@ -67,13 +67,13 @@
         [InlineData("AGCTT")]
         public void Return_False_If_Not_DNASequence(string value)
         {
-            StringHelper.IsDNASequence(value).ShouldBeFalse();
+            value.IsDNASequence().ShouldBeFalse();
         }
 
         [Fact]
         public void IsDNASequence_Return_True()
         {
-            StringHelper.IsDNASequence(string.Concat(Constants.ByteToDnaCodeMap.Select(s => s.Value))).ShouldBeTrue();
+            string.Concat(Constants.ByteToDnaCodeMap.Select(s => s.Value)).IsDNASequence().ShouldBeTrue();
         }
     }
 }

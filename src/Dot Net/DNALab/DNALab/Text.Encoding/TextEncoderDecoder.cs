@@ -1,10 +1,9 @@
 ﻿namespace DNALab.Text.Encoding
 {
+    using Core;
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
-    using Core;
-    using Helpers;
 
     public class TextEncoderDecoder : ITextEncoderDecoder
     {
@@ -21,9 +20,9 @@
         {
             if (string.IsNullOrEmpty(value)) return string.Empty;
 
-            if (!StringHelper.IsDNASequence(value)) throw new InvalidDNASequenceException();
+            if (!value.IsDNASequence()) throw new InvalidDNASequenceException();
 
-            var dnaChunks = StringHelper.Split(value, Constants.NucleotidesLength);
+            var dnaChunks = value.SplitToChunks(Constants.NucleotidesLength);
             var bytes = dnaChunks.Select(s => Constants.DnaCodeToByteMap[s]);
 
             return encoding.GetString(bytes.ToArray());
@@ -42,10 +41,10 @@
         {
             if (string.IsNullOrEmpty(value)) return string.Empty;
 
-            if (!StringHelper.IsDNASequence(value)) throw new InvalidDNASequenceException();
+            if (!value.IsDNASequence()) throw new InvalidDNASequenceException();
 
-            var decodingTasks = StringHelper
-                .Split(value, Constants.NucleotidesLength)
+            var decodingTasks = value
+                .SplitToChunks(Constants.NucleotidesLength)
                 .Select(s => Task.Run(() => Constants.DnaCodeToByteMap[s]))
                 .ToList();
 
@@ -67,7 +66,8 @@
         {
             var stringBuilder = new StringBuilder();
 
-            foreach (var b in encoding.GetBytes(dnaSequence)) stringBuilder.Append(Constants.ByteToDnaCodeMap[b]);
+            foreach (var b in encoding.GetBytes(dnaSequence))
+                stringBuilder.Append(Constants.ByteToDnaCodeMap[b]);
 
             return stringBuilder.ToString();
         }
@@ -83,7 +83,8 @@
 
         public async Task<string> EncodeAsync(string dnaSequence, Encoding encoding)
         {
-            var encodingTasks = encoding.GetBytes(dnaSequence)
+            var encodingTasks = encoding
+                .GetBytes(dnaSequence)
                 .Select(s => Task.Run(() => Constants.ByteToDnaCodeMap[s]))
                 .ToArray();
 

@@ -1,10 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-	<TargetFramework>net6.0</TargetFramework>
+	<TargetFramework>net8.0</TargetFramework>
 	<ImplicitUsings>enable</ImplicitUsings>
 	<Nullable>enable</Nullable>
-	<Version>0.0.3-alpha</Version>
+	<Version>0.0.4-alpha</Version>
 	<Authors>Serhii Voznyi</Authors>
 	<Company>Individual contributor</Company>
 	<Description>A library that contains data encoding/decoding functionality that converts data types to a DNA sequence.</Description>

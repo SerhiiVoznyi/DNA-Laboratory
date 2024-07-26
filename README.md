@@ -14,12 +14,12 @@ This projects contains implementation of DNA encoding and decoding algorithms wh
 
 ## Installation
 
-[![NuGet](https://img.shields.io/badge/NuGet-0.0.2-blue.svg)](https://www.nuget.org/packages/DNALab)
+[![NuGet](https://img.shields.io/badge/NuGet-0.0.4-blue.svg)](https://www.nuget.org/packages/DNALab)
 
 You can install the last stable version of **DNA Laboratory** using nuget.
 
 ```cmd
-PM> Install-Package DNALab -Version 0.0.3-alpha
+PM> Install-Package DNALab -Version 0.0.4-alpha
 ```
 
 For more details about package please visit [this](https://www.nuget.org/packages/DNALab).

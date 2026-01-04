@@ -1,49 +1,88 @@
 # DNA Laboratory
 
-The .NET Standard Library for encoding/decoding data into DNA sequence.
+A modern and lightweight **.NET Standard library** for encoding and decoding digital data into **DNA sequences**, inspired by biological information storage.
 
 ![Logo](./assets/Logo.jpg)
 
-## Legal notice
+---
 
-Code & Opinions expressed in this repository are solely my own and do not express the views or opinions of my employer. This code is not supported by any employer as well as not profitable and do not bring any financial benefits. All work that was done during its creation was conducted in my spare/personal time and based only on my willingness to help the open-source community.
+## Legal Notice
+
+All source code and opinions expressed in this repository are solely my own and do not represent the views, policies, or endorsements of my employer. This project is not commercially funded, not affiliated with any organization, and was developed entirely in my personal time with the intention of supporting learning, research, and the open-source community.
+
+---
 
 ## Overview
 
-This projects contains implementation of DNA encoding and decoding algorithms which will help you to encode binary data into DNA sequences.
+**DNA Laboratory** provides a practical implementation of DNA-based information encoding concepts.  
+It allows binary digital data to be converted into DNA nucleotide representations — and enables decoding back to binary when required.
+
+This library can serve as:
+
+- A learning tool for understanding DNA data encoding concepts.
+- A proof-of-concept for DNA-based digital storage approaches.
+- A lightweight utility for experimenting with bio-inspired information systems.
+
+---
 
 ## Installation
 
 [![NuGet](https://img.shields.io/badge/NuGet-0.0.5-blue.svg)](https://www.nuget.org/packages/DNALab)
 
-You can install the last stable version of **DNA Laboratory** using nuget.
+Install the latest version via **NuGet Package Manager**:
 
 ```cmd
 PM> Install-Package DNALab -Version 0.0.5-alpha
 ```
 
-For more details about package please visit [this](https://www.nuget.org/packages/DNALab).
+More details are available on the NuGet package page:  
+https://www.nuget.org/packages/DNALab
 
-## Encode binary data into DNA sequence
+---
 
-Any digital data can be represented as array of bytes.
-in a byte, each bit located from right to left represents a values from 0 (00000000) to 255 (11111111) [1].
+## Encoding Binary Data into DNA Sequences
 
-However in an array, (matrix 1 x N) values located from left to right [2] [3].
+Any digital data can be represented as an array of bytes.  
+Each byte consists of 8 bits, representing values in the range `0` (00000000) to `255` (11111111) [1].
 
-Lets split array by '**bit pairs**' from left to right, this how we get 4 pairs of bits. Each pair can be in one of 4 possible values: (00), (01), (10), and (11).
-Each of this state can be represented as **DNA nucleotide**.
-A Nucleotide in DNA consists of a sugar (deoxyribose), one of four bases (cytosine (C), thymine (T), adenine (A), guanine (G)), and a phosphate [4].
+In a byte array (1 × N matrix), values are processed from left to right [2][3].
+
+To perform encoding:
+
+1. Each byte is split into **four bit-pairs** (00, 01, 10, 11).
+2. Each pair is mapped to a specific **DNA nucleotide**.
+3. The result is a sequence composed of the four nucleotides: **A, T, C, G**.
+
+A DNA nucleotide consists of:
+
+- a sugar molecule (deoxyribose),
+- a phosphate group,
+- one of four bases: **adenine (A), thymine (T), cytosine (C), or guanine (G)** [4].
 
 ![An Explanation of DNA structure](./assets/dna.JPG)
 
-This means that any information streamed as an array of bytes, where each byte (eight-bit array), can be represented as a sequence of two base pairs of nucleotides.
+This makes it possible to represent ordinary digital data using biological-style encoding, translating bits into nucleotide sequences.
 
 ![Byte to DNA conversion](./assets/Byte-To-DNA.JPG)
 
+---
+
 ## References
 
-- [1] - [Byte](https://en.wikipedia.org/wiki/Byte)
-- [2] - [Array](https://docs.microsoft.com/en-us/dotnet/api/system.array?view=netcore-3.1)
-- [3] - [Matrix](https://en.wikipedia.org/wiki/Matrix_mathematics)
-- [4] - [Nucleotide](https://en.wikipedia.org/wiki/Nucleotide)
+- **[1] Byte — Digital Information Unit**  
+  Explanation of what a byte is, how it represents digital information, and its role in computing.  
+  https://en.wikipedia.org/wiki/Byte
+
+- **[2] Array in .NET**  
+  Official Microsoft documentation describing arrays, data layout, indexing, and their use in .NET applications.  
+  https://learn.microsoft.com/dotnet/api/system.array
+
+- **[3] Matrix Representation Concepts**  
+  Mathematical background of matrices, their structure, and relevance to ordered data representation.  
+  https://en.wikipedia.org/wiki/Matrix_mathematics
+
+- **[4] Nucleotide — The Foundation of DNA**  
+  Detailed description of nucleotides, their structure, biological purpose, and their role in DNA encoding — which inspired this project.  
+  https://en.wikipedia.org/wiki/Nucleotide
+
+---

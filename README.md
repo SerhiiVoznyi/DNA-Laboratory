@@ -1,6 +1,6 @@
 # DNA Laboratory
 
-A modern and lightweight **.NET Standard library** for encoding and decoding digital data into **DNA sequences**, inspired by biological information storage.
+A modern and lightweight **.NET library** for encoding and decoding digital data into **DNA sequences**, inspired by biological information storage. The package targets **.NET 10** (`net10.0`).
 
 ![Logo](./assets/Logo.jpg)
 
@@ -25,14 +25,21 @@ This library can serve as:
 
 ---
 
+## Requirements
+
+- **.NET 10** or later for applications and libraries that reference this package (the NuGet asset targets `net10.0`).
+- **SDK:** [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0) to build the solution from source. The repository includes [`global.json`](./src/Dot%20Net/DNALab/global.json) to pin a compatible SDK version.
+
+---
+
 ## Installation
 
-[![NuGet](https://img.shields.io/badge/NuGet-0.0.5-blue.svg)](https://www.nuget.org/packages/DNALab)
+[![NuGet](https://img.shields.io/badge/NuGet-0.0.6-blue.svg)](https://www.nuget.org/packages/DNALab)
 
 Install the latest version via **NuGet Package Manager**:
 
 ```cmd
-PM> Install-Package DNALab -Version 0.0.5-alpha
+PM> Install-Package DNALab -Version 0.0.6-alpha
 ```
 
 More details are available on the NuGet package page:  
